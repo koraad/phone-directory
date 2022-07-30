@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.3/font/bootstrap-icons.min.css" integrity="sha512-YzwGgFdO1NQw1CZkPoGyRkEnUTxPSbGWXvGiXrWk8IeSqdyci0dEDYdLLjMxq1zCoU0QBa4kHAFiRhUL3z2bow==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>My Phone Book</title>
+</head>
+<body>
+
+    <div class="phonebook">
+        <div class="input-container">
+
+            <i class="bi bi-book-half"></i>
+            <h1>My Phone Book</h1>
+
+            <div class="message">
+                Hello there
+            </div>
+    
+            <div class="input-block">
+                <label for="name">Name: </label>
+                <input type="text" name="name" id="name">
+            </div>
+            <div class="input-block">
+                <label for="place">Place: </label>
+                <input type="text" name="place" id="place">
+            </div>
+            <div class="input-block">
+                <label for="tel">Tel: </label>
+                <input type="tel" name="tel" id="tel">
+            </div>
+    
+            <button id="add-btn">Add Number</button>
+        </div>
+        <div class="list-container">
+            <table id="table">
+                <tr>
+                  <th>Name</th>
+                  <th>Place</th>
+                  <th>Number</th>
+                
+                </tr>
+                
+            </table>
+        </div>
+    </div>
+
+    
+    <script src="./OOP.js"></script>
+</body>
+</html>

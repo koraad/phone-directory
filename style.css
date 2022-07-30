@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body {
+    overflow-x: hidden;
+    min-height: 100vh;
+    height: auto;
+    background-color: white;
+    color: black;
+}
+
+.phonebook {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding-top: 50px;
+    width: 100%;
+    height: 100vh;
+}
+
+.bi-book-half {
+    font-size: 200px;
+    color: rebeccapurple;
+}
+.phonebook .message {
+    display: none;
+    width: 100%;
+    text-align: center;
+    background-color: red;
+    padding: 15px;
+    margin: 20px 0;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 400px;
+}
+
+.input-block {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 0;
+    width: 100%;
+}
+.input-block input{
+    padding: 10px 20px;
+    border: 2px solid rebeccapurple;;
+    border-radius: 5px;
+    width: 450px;
+    width: 100%;
+    display: block;
+}
+
+#add-btn {
+    display: block;
+    background-color: rebeccapurple;
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    color: white;
+    font-weight: bolder;
+    text-transform: capitalize;
+}
+
+.list-container {
+    display: flex;
+    width: 400px;
+    align-items: center;
+    justify-content: center;
+}
+
+table#table {
+
+    min-width: 400px;
+
+}
+
+.list-container tr {
+    background-color: rebeccapurple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: 100%;
+    position: relative;
+}
+.list-container tr:first-child {
+    border-radius: 0;
+    background-color: transparent;
+    margin: 0 20px 0 0;
+    margin-bottom: 20px;
+    padding: 0;
+    border-bottom: 1.5px solid rebeccapurple;
+    
+}
+.list-container tr:first-child th{
+    color: black;
+    padding: 10px;
+    width: 100%;
+}
+.list-container tr th,
+.list-container tr td
+{   color: white;
+    width: auto;
+    text-align: center;
+    width: 100%;
+}
+.bi-trash3-fill {
+    color: black;
+    display: inline-block;
+    transform: translateX(50px);
+    cursor: pointer;
+    position: absolute;
+    right: 60px;
+}
